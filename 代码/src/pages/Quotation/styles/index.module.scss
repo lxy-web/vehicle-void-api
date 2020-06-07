@@ -1,0 +1,362 @@
+.quotation {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #f4f4f4;
+
+    header {
+        width: 100%;
+        height: 25px;
+        background: #79cd92;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+
+        .carobj {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            overflow: hidden;
+            background: #fff;
+
+            p {
+                flex: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 80%;
+                    max-height: 70%;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+            }
+
+            ul {
+                flex: 6;
+                display: flex;
+                flex-direction: column;
+                // padding-left: 5px;
+                list-style: none;
+
+                li:nth-child(1) {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                }
+
+                li:nth-child(2) {
+                    flex: 1;
+                    display: flex;
+                    font-size: 14px;
+                    color: #666;
+
+                    span:nth-child(1) {
+                        flex: 2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+
+                    span:nth-child(2) {
+                        flex: 8;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        word-break: break-all;
+                    }
+                }
+            }
+        }
+
+        .tituser {
+            width: 90%;
+            height: 20px;
+            padding-left: 5%;
+            line-height: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .user {
+            width: 100%;
+            height: 180px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+
+            p {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                border-bottom: 1px solid #f4f4f4;
+
+                span {
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                input {
+                    flex: 8;
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+            div {
+                width: 100%;
+                height: 100px;
+
+                p:nth-child(1) {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    border-bottom: 1px solid #f4f4f4;
+
+                    span:nth-child(1) {
+                        flex: 2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    span:nth-child(2) {
+                        flex: 8;
+                        display: flex;
+                        padding-right: 5px;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                }
+
+                p:nth-child(2) {
+                    width: 80%;
+                    height: 50px;
+                    display: flex;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10%;
+
+                    span {
+                        flex: 1;
+                      
+                        height: 30px;
+                        background: #3aacff;
+                        border-radius: 10px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .dealer {
+            width: 100%;
+            background: #fff;
+
+            .item {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                border-bottom: 1px solid #f4f4f4;
+                li:nth-child(1) {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                li:nth-child(2) {
+                    flex: 7;
+                    display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    flex-direction: column;
+                    p {
+                        flex: 4;
+                        font-size: 13px;
+                        color: #333;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content:flex-start;
+                        padding-bottom:2px ;
+                    }
+
+                    span {
+                        flex: 6;
+                        word-break: break-all;
+                        font-size: 12px;
+                        color: #a2a2a2;
+                    }
+                }
+
+                li:nth-child(3) {
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    p {
+                        flex: 4;
+                        font-size: 12px;
+                        color: red;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    span {
+                        flex: 6;
+                        word-break: break-all;
+                        font-size: 12px;
+                        color: #a2a2a2;
+                    }
+                }
+            }
+
+            .near {
+                width: 95%;
+                height: 30px;
+                padding-left: 5%;
+                line-height: 30px;
+                font-size: 4px;
+                color: #666;
+                border-bottom: 1px solid #f4f4f4;
+
+            }
+        }
+    }
+
+    .city {
+        width: 100%;
+        height: 100%;
+        background: #f4f4f4;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow: auto;
+
+        .citycont {
+            width: 100%;
+
+            .cityone {
+                width: 100%;
+
+                p {
+                    width: 95%;
+                    height: 20px;
+                    line-height: 20px;
+                    padding-left: 5%;
+                    font-size: 12px;
+                    color: #666;
+                }
+
+                div {
+                    width: 100%;
+                    background: #fff;
+
+                    p {
+                        width: 95%;
+                        height: 30px;
+                        line-height: 30px;
+                        padding-left: 5%;
+                        font-size: 12px;
+                        color: #333;
+                        border-bottom: 1px solid #f4f4f4;
+                    }
+                }
+            }
+        }
+
+        .dialogsparent {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .6);
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            .cityone {
+                width: 100%;
+
+                div {
+                    width: 100%;
+                    background: #fff;
+
+                    p {
+                        width: 95%;
+                        height: 30px;
+                        line-height: 30px;
+                        padding-left: 5%;
+                        font-size: 12px;
+                        color: #333;
+                        border-bottom: 1px solid #f4f4f4;
+                    }
+                }
+            }
+        }
+    }
+    .dialogSuccss{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+        .cont{
+            width: 80%;
+            height: 30%;
+            position: fixed;
+            left: 10%;
+            top: 30%;
+            background:#fff;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            p:nth-child(1){
+                flex: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #3cc144;
+                font-size: 16px;
+            }
+            p:nth-child(2){
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                span{
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #666;
+                    font-size: 12px;
+                }
+            }
+            p:nth-child(3){
+                flex: 3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #3aacff;
+            }
+        }
+    }
+}
